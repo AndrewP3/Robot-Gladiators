@@ -8,7 +8,7 @@ var randomNumber = function(min, max) {
 };
 
 // fight function (now with parameter for enemy's name)
-var fight = function(enemyName) {
+var fight = function(enemy) {
   while (playerHealth > 0 && enemy.health > 0) {
     // ask player if they'd like to fight or run
     var promptFight = window.prompt('Would you like to FIGHT or SKIP this battle? Enter "FIGHT" or "SKIP" to choose.');
@@ -200,27 +200,6 @@ var shop = function() {
     }
   }
 };
-
-/* GAME INFORMATION / VARIABLES */
-var playerInfo = {
-    name: getPlayerName(),
-    ... // other playerInfo properties and methods
-
-}
- getPlayerNAme = function() {
-    var name = "";
-
-// ***************************************
-// ADD LOOP HERE WITH PROMPT AND CONDITION    
-// ***************************************
-
-console.log("Your robot's name is" + name);
-return name;
-};
-
-while (name === " " || name === null) {
-    name = prompt("What is your robot's name?");
-}
 
 // enemy information
 var enemyInfo = [
